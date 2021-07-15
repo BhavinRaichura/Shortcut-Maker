@@ -8,17 +8,19 @@ import os
 # Storage part 
 # The key combination to check
 COMBINATIONS = []
+# Above list will work a
+# COMBINATIONS = [ {keyboard.Key.tab, keyboard.KeyCode(char='a')}, {keyboard.Key.tab, keyboard.KeyCode(char='A')} ]
 
 
 dic_key ={}
-
+# dic_key = { keyboard.KeyCode(char='a'):['galculator','tab'] }
 
 ###################################################################
 # 
 # The currently active modifiers
 current = set()
 
-# Add new key
+# Add new key (tab + 'char')
 def add_key(prog, chr,syskey='tab'):
     COMBINATIONS.append({keyboard.Key.tab, keyboard.KeyCode(char=chr.lower())})
     COMBINATIONS.append({keyboard.Key.tab, keyboard.KeyCode(char=chr.upper())})
