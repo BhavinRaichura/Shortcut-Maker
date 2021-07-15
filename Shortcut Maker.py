@@ -29,10 +29,10 @@ def add_key(prog, chr,syskey='tab'):
 
 # Remove key
 def remove_key(chr):
-	COMBINATIONS.remove({keyboard.Key.tab, keyboard.KeyCode(char=chr.lower())})
-	COMBINATIONS.remove({keyboard.Key.tab, keyboard.KeyCode(char=chr.upper())})
-	dic_key[keyboard.KeyCode(char=chr.lower())]=None
-    	dic_key[keyboard.KeyCode(char=chr.upper())]=None
+    COMBINATIONS.remove({keyboard.Key.tab, keyboard.KeyCode(char=chr.lower())})
+    COMBINATIONS.remove({keyboard.Key.tab, keyboard.KeyCode(char=chr.upper())})
+    dic_key[keyboard.KeyCode(char=chr.lower())]=None
+    dic_key[keyboard.KeyCode(char=chr.upper())]=None
 
 # function for execute the program
 def execute(str):
