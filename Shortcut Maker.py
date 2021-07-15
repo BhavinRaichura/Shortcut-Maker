@@ -1,5 +1,5 @@
 ###################################################################
-# library need
+# Library 
 
 from pynput import keyboard
 import os
@@ -7,13 +7,10 @@ import os
 ###################################################################
 # Storage part 
 # The key combination to check
-COMBINATIONS = [
-    {keyboard.Key.tab, keyboard.KeyCode(char='a')},
-    {keyboard.Key.tab, keyboard.KeyCode(char='A')}
-]
+COMBINATIONS = []
 
 
-dic_key ={keyboard.KeyCode(char='a'):['galculator','tab']}
+dic_key ={}
 
 
 ###################################################################
